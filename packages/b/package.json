@@ -1,0 +1,8 @@
+{
+  "name": "@rollingversions/test-custom-scripts-npm-github-actions-b",
+  "dependencies": {
+    "@rollingversions/test-custom-scripts-npm-github-actions-a": "^0.0.0"
+  },
+  "publishConfig": {"access": "public"},
+  "scripts": {"test": "echo tests passed"}
+}

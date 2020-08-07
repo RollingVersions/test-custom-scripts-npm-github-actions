@@ -1,0 +1,9 @@
+name = "my-custom-api"
+
+dependencies = [
+  "@rollingversions/test-custom-scripts-npm-github-actions-a",
+  "@rollingversions/test-custom-scripts-npm-github-actions-b",
+]
+
+[scripts]
+publish = "node publish.js"

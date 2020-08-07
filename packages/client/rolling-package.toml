@@ -1,0 +1,8 @@
+name = "my-custom-client"
+
+dependencies = [
+  "my-custom-api",
+]
+
+[scripts]
+publish = "node publish.js"
