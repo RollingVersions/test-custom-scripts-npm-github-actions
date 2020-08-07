@@ -15,9 +15,9 @@ for (const key of [
 }
 
 const majorVersion = parseInt(process.env.NEW_VERSION.split('.')[0], 10);
-if (majorVersion % 2 !== 0) {
+if (majorVersion % 2 === 0) {
   console.error(
-    'The client can only be published on even major version numbers'
+    'The client can only be published on odd major version numbers'
   );
   process.exit(1);
 }
