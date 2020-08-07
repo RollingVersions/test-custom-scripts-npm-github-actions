@@ -14,4 +14,10 @@ for (const key of [
   env[key] = process.env[key];
 }
 
-console.log('Prepublish', env);
+const majorVersion = parseInt(process.env.NEW_VERSION.split('.')[0], 10);
+if (majorVersion % 2 !== 0) {
+  console.error(
+    'The client can only be published on even major version numbers'
+  );
+  process.exit(1);
+}
