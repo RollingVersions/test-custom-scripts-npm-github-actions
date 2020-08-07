@@ -13,8 +13,5 @@ for (const key of [
 ]) {
   env[key] = process.env[key];
 }
-if (process.argv.includes('--dry-run')) {
-  console.log('DEPLOYING CLIENT (dry run)', env);
-} else {
-  console.log('DEPLOYING CLIENT', env);
-}
+
+console.log('Prepublish', env);
