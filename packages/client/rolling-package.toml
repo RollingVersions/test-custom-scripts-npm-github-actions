@@ -5,4 +5,6 @@ dependencies = [
 ]
 
 [scripts]
-publish = "node publish.js"
+prepublish = "node prepublish"
+publish_dry_run = "node publish --dry-run"
+publish = "node publish"
